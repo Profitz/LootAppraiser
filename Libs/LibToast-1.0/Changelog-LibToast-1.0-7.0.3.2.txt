@@ -1,0 +1,8 @@
+2016-07-19  James D. Callahan III  <jcallahan@curse.com>
+
+[d440e435def7] [7.0.3.2]
+* LibToast-1.0.toc:
+
+Bump ToC Interface version.
+
+
