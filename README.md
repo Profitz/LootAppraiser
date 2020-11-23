@@ -8,3 +8,7 @@ Please understand, this addon does NOT determine liquid gold you are guaranteed 
 Need support or have suggestions?
 Join the Official LootAppraiser Discord:  https://discord.gg/qwc3K6mXgA
 
+Social Media:
+Twitter:    https://www.twitter.com/profitztv
+YouTube:    https://www.youtube.com/profitztv
+Instagram:  https://www.instagram.com/raygouldlive
