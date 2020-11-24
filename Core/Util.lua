@@ -1,4 +1,4 @@
-local LA = select(2, ...)
+ local LA = select(2, ...)
 
 local Util = {}
 LA.Util = Util

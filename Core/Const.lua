@@ -60,7 +60,7 @@ CONST.DB_DEFAULTS = {
         startSessionPromptUI = { },
         --general = { ["qualityFilter"] = "2", ["goldAlertThreshold"] = "100", ["ignoreRandomEnchants"] = true, ["surpressSessionStartDialog"] = true, ["ignoreSoulboundItems"] = false,  ["sellGrayItemsToVendor"] = false, ["autoRepairGear"] = false, ["autoDestroyTrash"] = false },
         general = { ["ignoreRandomEnchants"] = true, ["surpressSessionStartDialog"] = true, ["ignoreSoulboundItems"] = false,  ["sellGrayItemsToVendor"] = false, ["autoRepairGear"] = false, ["autoDestroyTrash"] = false },
-        pricesource = { ["source"] = "DBGlobalMarketAvg", ["useDisenchantValue"] = false },
+        pricesource = { ["source"] = "DBRegionMarketAvg", ["useDisenchantValue"] = false },
         notification = { ["sink"] = { ["sink20Sticky"] = false, ["sink20OutputSink"] = "RaidWarning", }, ["enableToasts"] = false, ["qualityFilter"] = "2", ["goldAlertThresholdA"] = "100", ["goldAlertThresholdB"] = "0", ["goldAlertThresholdC"] = "0", ["playSoundEnabled"] = true, ["soundNameA"] = "Auction Window Open", ["soundNameB"] = "None",["soundNameC"] = "None",},
         sellTrash = { ["tsmGroupEnabled"] = false, ["tsmGroup"] = "LootAppraiser`Trash", },
         blacklist = { ["tsmGroupEnabled"] = false, ["tsmGroup"] = "LootAppraiser`Blacklist", ["addBlacklistedItems2DestroyTrash"] = false, },
