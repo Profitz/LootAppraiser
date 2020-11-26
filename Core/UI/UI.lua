@@ -360,13 +360,16 @@ function UI.ShowMainWindow(showMainUI)
     --local statusbg = CreateFrame("Button", nil, private.MAIN_UI.frame)
 	
 	--added to support 9.0 version and changes to Frames 10.14.2020
-	local statusbg = CreateFrame("Button", nil, private.MAIN_UI.frame, BackdropTemplateMixin and "BackdropTemplate" or nil)	
+	--local statusbg = CreateFrame("Button", nil, private.MAIN_UI.frame, BackdropTemplateMixin and "BackdropTemplate" or nil)	
+	local statusbg = CreateFrame("Button", nil, private.MAIN_UI.frame, BackdropTemplateMixin and "BackdropTemplate")	
 	statusbg:SetPoint("BOTTOMLEFT", private.MAIN_UI.frame, "BOTTOMLEFT", 5, 3)
     statusbg:SetPoint("BOTTOMRIGHT", private.MAIN_UI.frame, "BOTTOMRIGHT", -2, 3)
     statusbg:SetHeight(24)
     statusbg:SetBackdrop({
-        bgFile = "Interface\\PaperDollInfoFrame\\UI-GearManager-Title-Background",
-		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+        --bgFile = "Interface\\PaperDollInfoFrame\\UI-GearManager-Title-Background",
+		bgFile = "Interface\\QUESTFRAME\\QuestBackgroundShadowlands",
+		--edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border-Corrupted",
         tile = true, tileSize = 32, edgeSize = 16,
         insets = { left = 3, right = 3, top = 5, bottom = 3 }
     })
@@ -390,8 +393,13 @@ function UI.ShowMainWindow(showMainUI)
     local backdrop = {
         --bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
 		--edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]],
-        bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		
+        --bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+		--edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+		bgFile = "Interface\\QUESTFRAME\\QuestBackgroundShadowlands",
+		edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border-Corrupted",
+		
+		
 		edgeSize = 2,
         insets = { left = 1, right = 1, top = 1, bottom = 1 }
     }

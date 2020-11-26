@@ -273,6 +273,10 @@ local PATTERN_LOOT_ITEM_SELF_MULTIPLE = LOOT_ITEM_SELF_MULTIPLE:gsub("%%s", "(.+
 -- merchant interaction event when opening
 function private.onMerchantEventShow(event, msg)
 	LA.Debug.Log("Merchant Opened")
+	
+	--Since no loot has been picked up, start session now for LA to interact with vendor to sell grays
+	LA.Session.Start(showMainUI)
+	
 	--auto sell gray items
 	if LA.GetFromDb("general", "sellGrayItemsToVendor") == true then
 		LA.Debug.Log("Auto Sell Grays: |cff00fe00Enabled|r")
